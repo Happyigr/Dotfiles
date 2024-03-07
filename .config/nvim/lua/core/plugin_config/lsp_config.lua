@@ -21,3 +21,4 @@ require("lspconfig").html.setup({ ftp = "html", on_atatch = on_attach, capabilit
 require("lspconfig").pyright.setup({ ftp = "python", on_atatch = on_attach, capabilities = capabilities })
 require("lspconfig").lua_ls.setup({ ftp = "lua", on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").clangd.setup({ ftp = "cpp", on_attach = on_attach, capabilities = capabilities })
+require("lspconfig").taplo.setup({ ftp = "toml", on_attach = on_attach, capabilities = capabilities })
