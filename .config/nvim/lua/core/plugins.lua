@@ -87,6 +87,20 @@ local plugins = {
 			require("startup").setup()
 		end,
 	},
+	-- chatgpt
+	{
+		"jackMort/ChatGPT.nvim",
+		event = "VeryLazy",
+		config = function()
+			require("chatgpt").setup()
+		end,
+		dependencies = {
+			"MunifTanjim/nui.nvim",
+			"nvim-lua/plenary.nvim",
+			"folke/trouble.nvim",
+			"nvim-telescope/telescope.nvim",
+		},
+	},
 	-- foor tmux navigation
 	{
 		"christoomey/vim-tmux-navigator",
