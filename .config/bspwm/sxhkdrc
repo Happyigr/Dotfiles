@@ -52,6 +52,10 @@ super + shift + s
 super + {h,u}
 	HideBar {-h,-u}
 
+# turn on focus mode
+super + f
+  focus_mode.sh
+
 # turn on or off the touchpad
 super + {_, shift + } + l
   xinput set-prop 14 194 {0,1}
