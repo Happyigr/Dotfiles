@@ -17,6 +17,8 @@ vim.opt.expandtab = true
 vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
 vim.keymap.set("n", "<C-S>", ":w<CR>")
 vim.keymap.set("v", "<C-c>", '"+y')
+vim.keymap.set("n", "]g", vim.diagnostic.goto_next)
+vim.keymap.set("n", "[g", vim.diagnostic.goto_prev)
 
 -- inc-rename.nvim
 vim.keymap.set("n", "<leader>cr", function()
