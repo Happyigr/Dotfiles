@@ -166,6 +166,7 @@ alias note='nvim /home/popich/Documents/Notes/Notes/Easy_notes'
 alias sherlock='python3 Hacking/sherlock/sherlock/sherlock.py'
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 alias moebius='cd ~/Apps/moebius; npm start'
+alias openports='sudo lsof -nP -iTCP -sTCP:LISTEN'
 # rm(){
 #   mv $1 ~/.local/share/Trash/files
 # }
