@@ -87,19 +87,16 @@ local plugins = {
 			require("startup").setup()
 		end,
 	},
-	-- chatgpt
+	-- codeium
 	{
-		"jackMort/ChatGPT.nvim",
-		event = "VeryLazy",
-		config = function()
-			require("chatgpt").setup()
-		end,
+		"Exafunction/codeium.nvim",
 		dependencies = {
-			"MunifTanjim/nui.nvim",
 			"nvim-lua/plenary.nvim",
-			"folke/trouble.nvim",
-			"nvim-telescope/telescope.nvim",
+			"hrsh7th/nvim-cmp",
 		},
+		config = function()
+			require("codeium").setup({})
+		end,
 	},
 	-- foor tmux navigation
 	{

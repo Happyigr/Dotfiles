@@ -45,9 +45,9 @@ super + shift + s
   killall mpv
 
 #colorpicker 
-#super + p
-#    dunstify -i gtk-dialog-info "color is copied in clipboard: $(colorpicker --short --one-shot --preview)"
-   
+super + p
+   colorpick.sh
+
 # Hide/Show Bar (Polybar and/or eww)
 super + {h,u}
 	HideBar {-h,-u}

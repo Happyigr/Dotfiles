@@ -1,5 +1,4 @@
 --require("core.plugin_config.gruvbox")
-require("core.plugin_config.chatgpt")
 require("core.plugin_config.catppuccin")
 require("core.plugin_config.lualine")
 require("core.plugin_config.nvim-tree")

@@ -5,9 +5,10 @@ require("conform").setup({
 		python = { "isort" },
 		-- Use a sub-list to run only the first available formatter
 		cpp = { "clang_format" },
+		js = { "prettier" },
 		rust = { "rustfmt" },
 		toml = { "taplo" },
-		bash = { "beutysh" },
+		bash = { "shfmt" },
 		css = { "prettier" },
 		html = { "prettier" },
 	},

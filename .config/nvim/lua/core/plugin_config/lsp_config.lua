@@ -1,6 +1,17 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = { "lua_ls", "rust_analyzer", "clangd", "taplo", "pyright", "html", "cssls", "tailwindcss" },
+	ensure_installed = {
+		"lua_ls",
+		"rust_analyzer",
+		"clangd",
+		"taplo",
+		"pyright",
+		"html",
+		"cssls",
+		"tailwindcss",
+		"denols",
+		"bashls",
+	},
 })
 
 local on_attach = function(_, _)
@@ -22,3 +33,5 @@ require("lspconfig").pyright.setup({ ftp = "python", on_atatch = on_attach, capa
 require("lspconfig").lua_ls.setup({ ftp = "lua", on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").clangd.setup({ ftp = "cpp", on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").taplo.setup({ ftp = "toml", on_attach = on_attach, capabilities = capabilities })
+require("lspconfig").denols.setup({ ftp = "js", on_attach = on_attach, capabilities = capabilities })
+require("lspconfig").bashls.setup({ ftp = "sh", on_attach = on_attach, capabilities = capabilities })
