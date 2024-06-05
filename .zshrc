@@ -162,7 +162,7 @@ source $ZSH/oh-my-zsh.sh
 alias ls='lsd -a --group-directories-first'
 alias ll='lsd -la --group-directories-first'
 alias todo='nvim ~/.config/conky/todo/todo.md'
-alias note='nvim /home/popich/Documents/Notes/Notes/Easy_notes'
+alias notes='nvim /home/popich/Documents/Notes/Notes'
 alias sherlock='python3 Hacking/sherlock/sherlock/sherlock.py'
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 alias moebius='cd ~/Apps/moebius; npm start'
@@ -206,3 +206,20 @@ bindkey "^I" expand-or-complete-with-dots
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 $HOME/.local/bin/colorscript -r
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/popich/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/popich/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/popich/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/popich/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
