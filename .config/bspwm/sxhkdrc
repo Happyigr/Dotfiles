@@ -15,11 +15,15 @@ super + alt + Return
 # Menu aplicaciones
 super + @space
 #	rofi -show drun -show-icons
-    OpenApps --menu
+  OpenApps --menu
 
 # Theme Selector
 alt + @space
 	RiceSelector
+
+# Apps
+alt + Tab
+  OpenApps --apps
 
 # Power off, Reboot, Log out, Lockscreen, kill an app
 ctrl + super + alt + {r,q,k}

@@ -8,7 +8,8 @@
  **/
 
 configuration {
-    show-icons:                 false;
+  modi: drun, window;
+  show-icons:                 false;
 	drun-display-format:        "{name}";
 	disable-history:                true;
 	sidebar-mode: 					false;
