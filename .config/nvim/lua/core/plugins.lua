@@ -33,6 +33,7 @@ local plugins = {
 		opts = {},
 	},
 	--rust
+	"nvim-neotest/nvim-nio",
 	"mfussenegger/nvim-dap",
 	"rcarriga/nvim-dap-ui",
 	"simrat39/rust-tools.nvim",

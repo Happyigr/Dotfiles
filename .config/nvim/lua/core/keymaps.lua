@@ -33,3 +33,12 @@ vim.keymap.set("v", "<A-j>", ":MoveBlock(1)<CR>", opts)
 vim.keymap.set("v", "<A-k>", ":MoveBlock(-1)<CR>", opts)
 vim.keymap.set("v", "<A-h>", ":MoveHBlock(-1)<CR>", opts)
 vim.keymap.set("v", "<A-l>", ":MoveHBlock(1)<CR>", opts)
+
+vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
+vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
+
+-- Buffer switching
+vim.keymap.set("n", "<leader>n", ":bnext<cr>")
+vim.keymap.set("n", "<leader>p", ":bprevious<cr>")
+vim.keymap.set("n", "<leader>d", ":bdelete<cr>")

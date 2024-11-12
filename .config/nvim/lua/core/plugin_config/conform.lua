@@ -11,5 +11,7 @@ require("conform").setup({
 		bash = { "shfmt" },
 		css = { "prettier" },
 		html = { "prettier" },
+		r = { "jupytext" },
+		rmd = { "mdsf" },
 	},
 })
