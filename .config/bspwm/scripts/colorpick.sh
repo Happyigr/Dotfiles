@@ -10,6 +10,8 @@ generate_color_block() {
   printf "\e[48;2;%d;%d;%dm█\e[0m" $red $green $blue
 }
 
+killall gpick
+
 color_code=$(gpick -so)
 # Generating the colored block for notification
 convert -size 64x64 xc:"$color_code" ~/.config/bspwm/assets/colored_block.png &

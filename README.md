@@ -1,6 +1,7 @@
 # Happyigr's Dotfiles
 
 ## Table of content
+Made with Stow
 
 
 # Description
